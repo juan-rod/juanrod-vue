@@ -1,22 +1,12 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+      <header>Header</header>
+      <main>
+        <article>Article</article>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+      </main>
+      <footer>Footer</footer>
   </div>
 </template>
 
@@ -25,7 +15,6 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
@@ -33,21 +22,37 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+main {
+  height: calc(100vh - 40vh);
+  display: flex;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+article {
+  flex: 1
+}
+nav {
+  order: -1
+}
+/**
+ = ======
+*/
+* {
+  box-sizing: border-box;
 }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
+nav,
+aside {
+  background: #808080;
+  padding: 10px;
+  width: 20vh;
 }
-
-a {
-  color: #42b983;
+header,
+footer {
+  background: rgba(0,0,0,0.18);
+  height: 20vh;
+  padding: 10px;
+}
+article {
+  padding: 10px;
 }
 </style>
