@@ -1,18 +1,16 @@
 <template>
-  <div class="hello">
-      <header>Header</header>
-      <main>
-        <article>Article</article>
-        <nav>Nav</nav>
-        <aside>Aside</aside>
-      </main>
-      <footer>Footer</footer>
+  <div class="hello f-row">
+      <left-side class="f-row_cell left-side"></left-side>
+      <right-side class="f-row_cell--3 right-side"></right-side>
   </div>
 </template>
 
 <script>
+import LeftSide from './leftside/LeftSide.vue'
+import RightSide from './rightside/RightSide.vue'
 export default {
   name: 'hello',
+  components: { LeftSide, RightSide },
   data () {
     return {
     }
@@ -22,37 +20,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-main {
-  height: calc(100vh - 40vh);
-  display: flex;
+.hello{
+  width:100vw;
 }
-
-article {
-  flex: 1
-}
-nav {
-  order: -1
-}
-/**
- = ======
-*/
-* {
-  box-sizing: border-box;
-}
-
-nav,
-aside {
-  background: #808080;
-  padding: 10px;
-  width: 20vh;
-}
-header,
-footer {
-  background: rgba(0,0,0,0.18);
-  height: 20vh;
-  padding: 10px;
-}
-article {
-  padding: 10px;
-}
+  .left-side{
+    padding:2px;
+  }
+  .right-side{
+    padding:2px;
+  }
 </style>
