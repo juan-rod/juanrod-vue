@@ -1,7 +1,9 @@
 <template>
-  <div class="hello f-row">
-      <left-side class="f-row_cell left-side"></left-side>
-      <right-side class="f-row_cell--3 right-side"></right-side>
+  <div class="hello col-12 f-row">
+    <div class="row">
+      <left-side class=" col-3 f-row_cell left-side"></left-side>
+      <right-side class=" col-9 f-row_cell right-side"></right-side>
+    </div>
   </div>
 </template>
 
@@ -22,11 +24,14 @@ export default {
 <style scoped>
 .hello{
   width:100vw;
+  height:100vh;
 }
   .left-side{
     padding:2px;
+    height: 90vh;
   }
   .right-side{
     padding:2px;
+    height: 90vh;
   }
 </style>

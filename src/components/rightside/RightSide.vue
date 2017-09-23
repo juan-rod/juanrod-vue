@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="right-side-container">
+    <div class="right-side-container col-12">
         <nav-bar></nav-bar>
         <transition name="slide-fade" mode="out-in">
         <router-view></router-view>

@@ -4,7 +4,7 @@
       <nav class="navbar navbar-toggleable-md navbar-light">
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <router-link class=" nav-item nav-link active" to="/"><span class="">Now</span></router-link>
+            <router-link class=" nav-item nav-link" to="/"><span class="">Now</span></router-link>
             <router-link class=" nav-item nav-link" to="/about"><span class="">About</span></router-link>
             <router-link class=" nav-item nav-link" to="/timeline"><span class="">Timeline</span></router-link>
             <router-link class=" nav-item nav-link" to="/projects"><span class="">Projects</span></router-link>
@@ -53,8 +53,8 @@ export default {
     border-left:1px solid #4c4e4d;
     
   }
-  /*.active{
+  .router-link-exact-active{
     position: relative;
     top: 50px;
-  }*/
+  }
 </style>

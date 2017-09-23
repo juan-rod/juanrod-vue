@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="app-f-row">
+  <div id="app" class="container-fluid">
     <router-view></router-view>
   </div>
 </template>
@@ -11,8 +11,9 @@ export default {
 </script>
 
 <style>
-body{
-  margin:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -22,20 +23,13 @@ body{
   color: #2c3e50;
   min-height: 100vh;
 }
-.f-row {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction:row;
+.container-fluid{
+  padding:0;
 }
 .f-row {
-  padding: 15px;
+  padding: 15px 42px;
   background: rgba(0,0,0,0.08);
   margin:0;
-}
-.app-f-row{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
 }
 .f-row_cell {
    flex: 1
@@ -46,9 +40,7 @@ body{
 .f-row_cell--3 {
    flex: 3
 }
-.f-row_cell,
-.f-row_cell--2,
-.f-row_cell--3 {
+.f-row_cell{
   /*background: pink;*/
   padding: 10px;
   margin: 5px;
