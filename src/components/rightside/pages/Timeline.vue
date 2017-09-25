@@ -120,7 +120,7 @@ export default {
   display: block;
   height: 100px;
   width: 1px;
-  background: blue;
+  background: pink;
   margin-left: 53px;
   }
 

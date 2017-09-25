@@ -8,8 +8,6 @@
           </a>
         </div>
       </div>
-        
-        <!-- <span>rightside</span> -->
     </div>
   </div>
 </template>
@@ -21,6 +19,10 @@ export default {
     return {
       projects: [
         {
+          name: 'juanrod_v2',
+          link: 'http://juanrod.co'
+        },
+        {
           name: 'lovelyfaceuglycity',
           link: 'http://lovelyfaceuglycity.com'
         },
@@ -29,31 +31,23 @@ export default {
           link: 'http://mediasciencenyc.com'
         },
         {
+          name: 'mediasciencepanel',
+          link: 'http://mediasciencepanel.com'
+        },
+        {
           name: 'rReports',
-          skills: 'AngularJS, Bootstrap',
-          desc: 'rReports, a mock website design, showcases a product description page. The main feature is the carousel-like display of product information. ',
-          img: 'data/images/rreports.png',
           link: 'http://rreports.juanrod.co'
         },
         {
           name: 'uPick',
-          skills: 'AngularJS, Bootstrap, Google Maps API',
-          desc: 'uPick, a mobile-friendly web application, is a solution for my personal struggle to pick a restaurant. With the implementation of geolocation, a number of local restaurants populate on the screen. With a click of a button, a restaurant of your choice is randomly choosen.',
-          img: 'data/images/uPickv1.jpg',
           link: 'https://upick-88.firebaseapp.com/#/oh'
         },
         {
           name: 'War',
-          skills: 'RequireJS, jQuery, Handlebars, Bootstrap, DeckOfCards API',
-          desc: 'This project is based on the card game, War. Users compete with themselves. Begin with a full deck and flip cards until the decks are empty.',
-          img: 'data/images/war_game.jpg',
           link: 'http://war.juanrod.co'
         },
         {
           name: 'MultiVision',
-          skills: 'MongoDB, ExpressJS, AngularJS, Node.js, Bootstrap, Stylus, Jade, Karma ',
-          desc: 'A simple website that implements authentication and authorization utilizing the MEAN Stack. A practice site for me to try my hand at angular testing, server and client side communication, utilizing Jade and Stylus templating, storing new users and the ability to edit information on the dom and pushing it into the database. ',
-          img: 'data/images/multivison.jpg',
           link: 'https://sleepy-island-45336.herokuapp.com/'
         }
       ]
