@@ -1,15 +1,18 @@
 <template>
   <div>
     <div class="left-side-container">
-        <!-- <span>leftside</span> -->
+      <profile></profile>
+      <!-- <social></social> -->
     </div>
   </div>
 </template>
 
 <script>
-
+import Profile from './components/Profile.vue'
+import Social from './components/Social.vue'
 export default {
   name: 'Left-Side',
+  components: { Profile, Social },
   data () {
     return {
     }
@@ -23,8 +26,5 @@ export default {
     background: #eee;
     height:100%;
   }
-  /*.left-side-container:hover{
-    background: rgba(238, 238, 238, 0.65);
-    height:100%;
-  }*/
+
 </style>
