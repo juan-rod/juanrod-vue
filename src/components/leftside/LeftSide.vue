@@ -2,17 +2,17 @@
   <div>
     <div class="left-side-container">
       <profile></profile>
-      <!-- <social></social> -->
+      <head-shot></head-shot>
     </div>
   </div>
 </template>
 
 <script>
 import Profile from './components/Profile.vue'
-import Social from './components/Social.vue'
+import HeadShot from './components/Head.vue'
 export default {
   name: 'Left-Side',
-  components: { Profile, Social },
+  components: { Profile, HeadShot },
   data () {
     return {
     }
@@ -25,6 +25,7 @@ export default {
   .left-side-container{
     background: #eee;
     height:100%;
+    padding: 0 2%;
   }
 
 </style>
